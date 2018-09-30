@@ -4,6 +4,7 @@ var debug = require('debug')('hookhub-hook-ping');
 
 debug("Loading");
 
+// Get payload
 router.use('/', function (req, res, next) {
 	if (req.method == 'GET') {
 		res.locals.payload = req.query;
@@ -20,7 +21,7 @@ router.use('/', function (req, res, next) {
 	next();
 });
 
-/* GET home page. */
+/* Default handler. */
 router.use('/', function(req, res, next) {
   debug("Handling default request");
   var params = {result:"PONG",ts:Date.now(),message:"PONG"};
