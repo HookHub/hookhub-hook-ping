@@ -1,2 +1,2 @@
 # hookhub-hook-ping
-HookHub Ping Example Hook
+Ping example hook for [HookHub](https://github.com/TyIsI/hookhub)  
